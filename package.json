@@ -2,6 +2,9 @@
   "name": "try-1",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "node": "14.15.0"
+  },
   "scripts": {
     "build": "webpack",
     "start": "webpack-dev-server --color --mode development --open --hot",
