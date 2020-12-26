@@ -8583,6 +8583,11 @@ lru-cache@^6.0.0:
   dependencies:
     yallist "^4.0.0"
 
+lscache@^1.3.0:
+  version "1.3.0"
+  resolved "https://registry.yarnpkg.com/lscache/-/lscache-1.3.0.tgz#2221fd39f3393d2dfbc6ed2231beb52e11e43396"
+  integrity sha512-0JwzMSSu3fd3m8QQVbqIxzXywkNLQvgdNehuEtZ66v7f89ybpkZX+WN45SkvChP4AqUPSpDPJKHsAqStOhHgUA==
+
 lz-string@^1.4.4:
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/lz-string/-/lz-string-1.4.4.tgz#c0d8eaf36059f705796e1e344811cf4c498d3a26"
@@ -8651,6 +8656,14 @@ markdown-to-jsx@^6.11.4:
   dependencies:
     prop-types "^15.6.2"
     unquote "^1.1.0"
+
+match-sorter@^6.0.2:
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/match-sorter/-/match-sorter-6.0.2.tgz#91bbab14c28a87f4a67755b7a194c0d11dedc080"
+  integrity sha512-SDRLNlWof9GnAUEyhKP0O5525MMGXUGt+ep4MrrqQ2StAh3zjvICVZseiwg7Zijn3GazpJDiwuRr/mFDHd92NQ==
+  dependencies:
+    "@babel/runtime" "^7.12.5"
+    remove-accents "0.4.2"
 
 material-colors@^1.2.1:
   version "1.2.6"
@@ -10462,6 +10475,14 @@ react-popper@^2.2.4:
     react-fast-compare "^3.0.1"
     warning "^4.0.2"
 
+react-query@^3.5.5:
+  version "3.5.5"
+  resolved "https://registry.yarnpkg.com/react-query/-/react-query-3.5.5.tgz#50bae84066e1f61dc9a14ee7db8ea1a224535698"
+  integrity sha512-WYZcHcAs5K5lPGT6CI8fz3lU62S8IfZhvB1K4aZH27wg9T6CWei+y7IRyZwti9X18LX134O4olgEuNth9LEX+w==
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+    match-sorter "^6.0.2"
+
 react-refresh@0.9.0:
   version "0.9.0"
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.9.0.tgz#71863337adc3e5c2f8a6bfddd12ae3bfe32aafbf"
@@ -10792,6 +10813,11 @@ remark-squeeze-paragraphs@4.0.0:
   integrity sha512-8qRqmL9F4nuLPIgl92XUuxI3pFxize+F1H0e/W3llTk0UsjJaj01+RrirkMw7P21RKe4X6goQhYRSvNWX+70Rw==
   dependencies:
     mdast-squeeze-paragraphs "^4.0.0"
+
+remove-accents@0.4.2:
+  version "0.4.2"
+  resolved "https://registry.yarnpkg.com/remove-accents/-/remove-accents-0.4.2.tgz#0a43d3aaae1e80db919e07ae254b285d9e1c7bb5"
+  integrity sha1-CkPTqq4egNuRngeuJUsoXZ4ce7U=
 
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
