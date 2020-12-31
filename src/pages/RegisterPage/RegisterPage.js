@@ -1,7 +1,7 @@
 import React from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
-import { email, password } from "SRC/utils/validations";
+import { username, email, password } from "SRC/utils/validations";
 import TextField from "@material-ui/core/TextField";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
@@ -14,11 +14,12 @@ import Box from "@material-ui/core/Box";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
-import LockOpenIcon from "@material-ui/icons/LockOpen";
+import LocalMallIcon from "@material-ui/icons/LocalMall";
 
 import { postData } from "SRC/services/postData";
 
 const validationSchema = yup.object({
+  username,
   email,
   password
 });
@@ -56,13 +57,14 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export const LoginPage = () => {
+export const RegisterPage = () => {
   const classes = useStyles();
 
   const formik = useFormik({
     initialValues: {
-      email: "demo@demo.com",
-      password: "12345678"
+      username: "",
+      email: "",
+      password: ""
     },
     validationSchema: validationSchema,
     onSubmit: (values) => {
@@ -77,12 +79,23 @@ export const LoginPage = () => {
       <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
         <div className={classes.paper}>
           <Avatar className={classes.avatar}>
-            <LockOpenIcon />
+            <LocalMallIcon />
           </Avatar>
           <Typography component="h1" variant="h5">
-            Log In
+            Register
           </Typography>
           <form onSubmit={formik.handleSubmit}>
+            <TextField
+              fullWidth
+              margin="normal"
+              id="username"
+              name="username"
+              label="Username"
+              value={formik.values.username}
+              onChange={formik.handleChange}
+              error={formik.touched.username && Boolean(formik.errors.username)}
+              helperText={formik.touched.username && formik.errors.username}
+            />
             <TextField
               fullWidth
               margin="normal"
@@ -125,8 +138,8 @@ export const LoginPage = () => {
           </Grid>
           <Grid container className={classes.linkWrapper}>
             <Grid item xs>
-              <Link href="/register" variant="body2" mx="auto">
-                Don't have an account? Sign Up
+              <Link href="/login" variant="body2" mx="auto">
+                Already have an account? Sign In
               </Link>
             </Grid>
           </Grid>

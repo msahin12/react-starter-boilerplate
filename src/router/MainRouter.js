@@ -18,6 +18,14 @@ const LoginPage = lazy(() =>
   )
 );
 
+const RegisterPage = lazy(() =>
+  import(
+    "PAGES/RegisterPage"
+    /* webpackChunkName: "LoginPage" */
+    /* webpackPrefetch: true */
+  )
+);
+
 const NotFoundPage = lazy(() =>
   import(
     "PAGES/NotFoundPage"
@@ -36,6 +44,7 @@ export const MainRouter = () => {
       <Suspense fallback="">
         <Switch>
           <Route path="/login" component={LoginPage} exact />
+          <Route path="/register" component={RegisterPage} exact />
           <Route path="/" component={HomePage} exact />
           <Route path="*" component={NotFoundPage} />
         </Switch>

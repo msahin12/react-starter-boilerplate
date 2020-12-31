@@ -30,6 +30,10 @@ export const HomePage = () => {
       <strong>✨ {data.stargazers_count}</strong>
       <strong>🍴 {data.forks_count}</strong>
       <div>{isFetching ? "Updating..." : ""}</div>
+      <hr />
+      <a href="/login"> Login</a>
+      <hr />
+      <a href="/register"> Register</a>
     </div>
   );
 };

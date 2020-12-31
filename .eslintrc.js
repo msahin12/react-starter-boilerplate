@@ -23,7 +23,7 @@ module.exports = {
     "react/jsx-uses-vars": "error",
     "no-plusplus": ["off", { allowForLoopAfterthoughts: true }],
     "no-param-reassign": "off",
-    "no-unused-expressions": ["error", { allowShortCircuit: true }],
+    "no-unused-expressions": ["warn", { allowShortCircuit: true }],
     "consistent-return": "off",
     "react/jsx-props-no-spreading": "off",
     "jsx-a11y/click-events-have-key-events": "off",
@@ -36,9 +36,9 @@ module.exports = {
     "react/no-array-index-key": "off",
     "react/forbid-prop-types": "warn",
     "react/display-name": "warn",
-    "react/jsx-no-bind": "error",
+    "react/jsx-no-bind": "warn",
 
-    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/rules-of-hooks": "warn",
     "react-hooks/exhaustive-deps": "warn",
 
     "import/prefer-default-export": "off",

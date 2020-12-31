@@ -1,3 +1,3 @@
 export const initialState = {
-  test: "Test Data"
+  test: "Home Page Test Data"
 };
